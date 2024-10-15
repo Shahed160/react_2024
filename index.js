@@ -4,8 +4,8 @@ class Person{
         this.age=userAge;
         this.isMarried=isUsermarried;
     }
-    eat(){
-        return `${this.name} is Eating`;
+    eat(food){
+        return ` ${this.sleep()} after ${this.name} is Eating ${food}`;
     }
     sleep(){
         return `${this.name} is Sleeping`;
@@ -15,7 +15,7 @@ class Person{
     } 
 }
 var ahmad=new Person("Ahmad",25,false);
-console.log(ahmad.eat());
+console.log(ahmad.eat("mansaf"));
 console.log(ahmad.sleep());
 console.log(ahmad.speak());
 
